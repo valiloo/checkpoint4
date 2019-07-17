@@ -1,20 +1,20 @@
 <link href="https://fonts.googleapis.com/css?family=Cutive|Quattrocento&display=swap" rel="stylesheet"> 
-<button type="button" mdbBtn color="white" size="sm" class="relative waves-light" (click)="basicModal.show()" mdbWavesEffect>Contact</button>
+<div class="row justify-content-center row-button">
+        <button type="button" mdbBtn color="white" size="sm" class="relative waves-light" (click)="basicModal.show()" mdbWavesEffect>Contact</button>
+</div>
 
 <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
-          <span aria-hidden="true">×</span>
+          <span aria-hidden="true" class="font-contact">×</span>
         </button>
-        <h4 class="modal-title w-100 font-contact" id="myModalLabel">Contact</h4>
+        <h4 class="modal-title w-100 font-contact text-center" id="myModalLabel">Contact</h4>
       </div>
       <div class="modal-body">
         <!-- Default form contact -->
 <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-
-        <p class="h4 mb-4 font-contact">Nous contacter</p>
       
         <!-- Name -->
         <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
@@ -25,9 +25,9 @@
           class="form-control mb-4 font-contact" placeholder="E-mail">
       
         <!-- Subject -->
-        <label>Subject</label>
+        <label class="font-contact">Sujet</label>
         <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
-          <option value="" disabled class="font-contact">Choose option</option>
+          <option value="" disabled class="font-contact">Choisir une option</option>
           <option value="1" selected class="font-contact">Reservation ticket</option>
           <option value="2" class="font-contact">Question </option>
           <option value="3" class="font-contact">Feedback</option>
@@ -44,14 +44,14 @@
         <mdb-checkbox [default]="true" class="mb-4 font-contact">M'envoyer une copie de ce message :</mdb-checkbox>
       
         <!-- Send button -->
-        <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+        <button mdbBtn color="white" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
           mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Envoyer</button>
       
       </form>
       <!-- Default form contact -->
       </div>
-      <div class="modal-footer">
-        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
+      <div class="modal-footer justify-content-center">
+        <button type="button" mdbBtn color="white" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
         
       </div>
     </div>
