@@ -1,0 +1,27 @@
+.img-card {
+    height: 300px;
+ width: 400px;
+    margin-inline-start: 32px;
+    overflow: hidden;
+}
+
+.container-fluid {
+    margin-top: 32px;
+}
+
+.img-container {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+   }
+.font {
+    font-family: 'Quattrocento', serif;
+    color: white;
+}
+hr {
+    border: 0;
+    height: 3px;
+    background: #095484;
+    background-image:  linear-gradient(to right, #ccc, 	#FFD700, #ccc);
+    }
+

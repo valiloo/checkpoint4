@@ -9,6 +9,9 @@ import { ShowsComponent } from './shows/shows.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ConnectionService } from './connection.service';
+import { FormsModule, ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,12 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

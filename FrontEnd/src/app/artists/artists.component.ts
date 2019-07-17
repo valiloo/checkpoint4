@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-artists',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService : ApiService) { }
+
+  artistsAssets : any = []
+
+  getArtists() {
+    return this.apiService.getArtists().subscribe((data : {}) => {
+      this.artistsAssets = data
+    })
+  }
 
   ngOnInit() {
+    this.getArtists()
   }
 
 }
