@@ -1,0 +1,31 @@
+.text-shows {
+    color: white !important;
+    font-family: 'Quattrocento', serif;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: #095484;
+    background-image:  linear-gradient(to right, #ccc, 	#FFD700, #ccc);
+    }
+
+img {
+    width: 320px;
+    height : 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.line-left {
+    border-bottom: solid gold 3px;
+}
+
+.col {
+    padding-left: 0px !important;
+}
+
+.line-right {
+    border-bottom: solid gold 3px;
+}
