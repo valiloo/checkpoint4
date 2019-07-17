@@ -1,6 +1,21 @@
 <app-caroussel></app-caroussel>
-<app-navbar></app-navbar>
-<app-shows></app-shows>
-<app-artists></app-artists>
-<app-tickets></app-tickets>
+<link href="https://fonts.googleapis.com/css?family=Cutive|Quattrocento&display=swap" rel="stylesheet"> 
+<mdb-navbar SideClass="navbar navbar-expand-lg sticky-top navbar-dark black">
+    <links>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect href="#shows">Shows<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect href="#artists">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect href="#contact">Contact</a>
+          </li>
+          </ul>
+    </links>
+  </mdb-navbar>
+<app-shows id="shows"></app-shows>
+<app-artists id="artists"></app-artists>
+<app-tickets id="contact"></app-tickets>
 <app-footer></app-footer>

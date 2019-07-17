@@ -4,8 +4,7 @@ import { AppComponent } from './app.component';
 import { CarouselComponent } from 'angular-bootstrap-md';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/homepage', pathMatch: 'full'},
-  { path: 'homepage', component : CarouselComponent }
+
 ];
 
 @NgModule({

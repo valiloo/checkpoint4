@@ -13,6 +13,7 @@
     height: 300px;
     width: 400px;
     overflow: hidden;
+    margin-left: 15%;
    }
 .font {
     font-family: 'Quattrocento', serif;
@@ -24,4 +25,8 @@ hr {
     background: #095484;
     background-image:  linear-gradient(to right, #ccc, 	#FFD700, #ccc);
     }
+
+.card-middle {
+    margin-left: 15%;
+}
 
